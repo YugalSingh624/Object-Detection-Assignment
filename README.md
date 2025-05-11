@@ -92,15 +92,10 @@ The model is trained with the following parameters:
 
 The model is evaluated using mean Average Precision (mAP) at an IoU threshold of 0.5, which is a standard metric for object detection tasks.
 
-## Pretrained Models
-
-Pretrained models are available for download:
-- [DenseNet-YOLO trained on COCO (5 epochs)](https://example.com/densenet-yolo-coco-5ep.pth)
-- [DenseNet-YOLO trained on COCO (50 epochs)](https://example.com/densenet-yolo-coco-50ep.pth)
 
 ## Results
 
-| Model | Backbone | Input Size | mAP@0.5 | FPS (RTX 3090) |
+| Model | Backbone | Input Size | mAP@0.5 | FPS (RTX 4050) |
 |-------|----------|------------|---------|----------------|
 | DenseNet-YOLO | DenseNet121 | 416×416 | 58.3% | 45 |
 
@@ -143,9 +138,6 @@ boxes = process_predictions(outputs, ANCHORS, conf_thresh=0.25)
 boxes = improved_nms(boxes)
 ```
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
@@ -153,20 +145,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - YOLO algorithm design principles from the original YOLO papers
 - COCO dataset for object detection
 
-## Citation
 
-If you use this code in your research, please cite:
-
-```
-@misc{densenet-yolo,
-  author = {Your Name},
-  title = {DenseNet-YOLO Object Detection},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub Repository},
-  howpublished = {\url{https://github.com/username/densenet-yolo}}
-}
-```
 
 ## Contributing
 
